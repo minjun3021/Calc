@@ -178,18 +178,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         case 1:
                             second=Integer.parseInt(maintv.getText().toString());
                             result=first+second;
+                            subtv.setText("");
+                            maintv.setText(String.valueOf(result));
+
                             break;
                         case 2:
                             second=Integer.parseInt(maintv.getText().toString());
                             result=first-second;
+                            subtv.setText("");
+                            maintv.setText(String.valueOf(result));
                             break;
                         case 3:
                             second=Integer.parseInt(maintv.getText().toString());
                             result=first*second;
+                            subtv.setText("");
+                            maintv.setText(String.valueOf(result));
                             break;
                         case 4:
                             second=Integer.parseInt(maintv.getText().toString());
                             result=first/second;
+                            subtv.setText("");
+                            maintv.setText(String.valueOf(result));
                             break;
                     }
                 }
